@@ -1,0 +1,204 @@
+:root {
+  --font-main: "Segoe UI", sans-serif;
+  --radius: 12px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --border-color: #e2e8f0;
+  --muted: #718096;
+  --accent-blue: #3b82f6;
+  --accent-green: #10b981;
+  --accent-gray: #94a3b8;
+  --background: #f8fafc;
+  --card-bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: var(--background);
+  color: #1a202c;
+}
+
+Link{
+  text-decoration: none;
+}
+
+
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1280px;
+  margin: auto;
+}
+
+
+.dashboard-header {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+  border-radius: var(--radius);
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.stat-card h2 {
+  margin: 0.3rem 0 0;
+  font-size: 1.8rem;
+}
+
+.stat-card svg {
+  background: #eff6ff;
+  padding: 6px;
+  border-radius: 50%;
+  color: var(--accent-blue);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.toolbar select {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: #1a202c;
+  font-size: 1rem;
+}
+
+.add-task-btn {
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem; 
+  font-size: 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.add-task-btn:hover {
+  background: #2563eb;
+}
+
+
+.task-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.task-card h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #111827;
+}
+
+.task-card > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.task-card button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4b5563;
+  transition: color 0.2s;
+}
+
+.task-card button:hover {
+  color: var(--accent-blue);
+}
+
+.task-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0.3rem 0;
+}
+
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  margin-top: 0.5rem;
+}
+
+.status-todo {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.status-in-progress {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+.status-done {
+  background: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+
+.task-card .due-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.4rem;
+}

@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: hsl(var(--background));
+  border-bottom: 1px solid hsl(var(--border));
+  box-shadow: 0 2px 4px rgba(58, 54, 54, 0.06);
+  position:sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: hsl(var(--primary));
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: hsl(var(--foreground));
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: hsl(var(--primary));
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.balance {
+  font-size: 0.95rem;
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--muted));
+  padding: 6px 12px;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.account-icon {
+  background-color: hsl(var(--muted));
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.account-icon:hover {
+  background-color: hsl(var(--muted-foreground));
+  color: hsl(var(--background));
+}
