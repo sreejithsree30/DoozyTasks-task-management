@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Dashboard from "./components/Dashboard"
 import Addtask from "./components/Addtask"
-import EditTask from "./components/Edittask"
+import EditTask from "./components/EditTask"
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 
